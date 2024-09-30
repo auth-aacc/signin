@@ -1,0 +1,359 @@
+/*
+    Theme Name: AACC 
+    Description: Bootstrap Genesis Child Theme. Currently using Bootstrap 3.3.7
+    Author: Pongos
+    Author URI: http://pongos.com/
+    Version: 0.1
+    Template: genesis
+*/
+
+body { 
+	 -webkit-font-smoothing: antialiased;
+}
+
+.dark-text,
+.no-background { 
+	color:#333;
+}
+
+.max-1500,
+.max-1200 {
+	margin-left:auto;
+	margin-right:auto;
+}
+.max-1500 {
+	max-width:1500px;
+}
+.max-1200 {
+	max-width:1200px;
+}
+
+.logo-block,
+.search-form,
+.menu-login-menu-container
+ { 
+	display:inline-block; 
+	vertical-align: middle;
+}
+.site-container { 
+	border-top: 9px solid #0090d4;
+}
+.site-header,
+.site-inner { 
+	background-color:#fff;
+}
+
+.no-gutters { 
+	padding-left:0; 
+	padding-right:0;
+}
+
+.search-form input,
+.search-form .search-submit { 
+	border:none;
+	box-shadow:none;
+	color:#859399
+}
+.search-form .search-submit:hover,
+.search-form .search-submit:focus { 
+	background: none;
+	color: #0090d4;
+}
+
+body.search-results .entry {
+    border-bottom: 1px solid #ccc;
+    padding-bottom: 40px;
+    margin-bottom: 50px;
+}
+
+.site-footer { 
+	background:#0090d4;	
+	text-align:center;
+	padding: 3rem 0;
+}
+.footer-section-2 { 
+    margin: 2.5rem 0;
+    padding: 3rem 0;
+    border-top: 2px solid #6dc9f5;
+	border-bottom: 2px solid #6dc9f5;
+}
+
+.site-footer .number { 
+	font-size:20px;
+	line-height:20px;
+	font-weight:bold;
+}
+
+.hero-bg { 
+    background-size: cover;
+	background-repeat: no-repeat;
+    height: 250px;
+	overflow:hidden;
+	background-position: top center;
+}
+
+.rsswidget img {
+    display: none;
+}
+
+.light-text { 
+	color:#859399;
+}
+.menu-social-media-container { 
+	font-family: FontAwesome;
+	text-align: center;
+	padding-top:10px;
+}
+.site-footer .widget .menu-social-media-container a { 
+	font-size:0;
+	padding-left:15px;
+	padding-right:15px;
+}
+.menu-social-media-container a:hover, 
+.menu-social-media-container a:focus {
+	text-decoration:none;
+	color:#003a6a;
+}
+.menu-social-media-container .facebook a::before { 
+	content: "\f09a";
+	font-size:25px;
+}
+.menu-social-media-container .twitter a::before { 
+	content: "\f099";
+	font-size:25px;
+}
+.menu-social-media-container .linkedin a::before { 
+	content: "\f0e1";
+	font-size:25px;
+}
+.menu-social-media-container .rss a::before { 
+	content: "\f09e";
+	font-size:25px;
+}
+.menu-social-media-container .fa-instagram a::before { 
+	content: "\f16d;
+	font-size:25px;
+}
+.widget .inline { 
+	display: inline-block;
+	text-align:left;
+	vertical-align: top;
+}
+
+.widget .inline img { 
+	padding:5px 8px;
+	
+}
+
+@media (min-width: 992px) { 
+	.footer-section-2 { 
+		text-align:left;
+	}
+	.footer-section-2 .widget:nth-child(2) { 
+		text-align:center;
+	}
+}
+@media (max-width: 991px) { 
+	
+	.footer-section-2 img { 
+		display:none;
+	}
+	.footer-section-2 .widget .inline{ 
+		text-align:center;
+	}
+	
+}
+
+
+.label-30 label { 
+	width:30%;
+	vertical-align:top;
+}
+span.tab-60 { 
+	display:inline-block;
+	width:60%;
+}
+
+.simian-orderby-control, 
+.simian-ppp {
+	width:48%;	
+	display: inline-block;
+	margin-bottom:1em;
+}
+
+.simian-orderby-control { 
+	margin-right:3%;
+}
+
+.lwa { 
+	margin-bottom:0;
+}
+
+@media screen and (max-width: 500px)  {
+	.lwa-modal {
+    	margin-left: -150px;
+		max-width:300px;
+   
+	}
+}
+
+/* Printer  */
+@media print { 
+	
+	[class*="col-md"], [class*="col-sm"], [class*="col-xs"] {
+        float: none;
+		width: 100%;
+    }
+	
+	.site-container { 
+		max-width: 95%;
+		margin-left:auto;
+		margin-right:auto;
+		border-top: none;
+		margin-top:10px;
+	}
+
+	.sidebar-left,
+	.sidebar-alt,
+/*  .sidebar-primary,    allow this  */
+	.breadcrumb,
+	.site-footer,
+	nav,
+	.nav, 
+	.navbar,
+	.hp-slider,
+	.post-edit-link{ 
+	
+		display:none; 
+	
+	}
+	h1, h2, h3, h4, h5, h6, a,
+	.table thead th,
+	footer,
+	.primary-bg,
+	.secondary-bg,
+	.text-white,
+	.nav-tabs-custom .tab-content,
+	.card .reverse-bg {
+    	background: #fff;
+    	color: #000 !important;
+	}
+	
+	
+	.jumbotron { 
+		margin:0;
+	
+	}
+	
+	.table,
+	.table th,
+	.table td { 
+		border-color:#000;
+		border-bottom-color:#000 !important;
+	}
+	
+	*::first-letter {
+    	margin-top: 0;
+	}
+	
+	 /* Hide link's href URL in print. */
+  	a[href]:after {
+    	content: none !important;
+  	}
+	
+	.alignright {
+    	float: right;
+		margin: 5px 0 5px 20px;
+	}
+	.alignleft {
+    	float: left;
+		margin: 5px 10px 5px 0;
+	}
+
+}
+
+
+/* tribe events override */
+.tribe-events-list-widget .tribe-list-widget {
+    padding-left: 0;
+}
+
+.tribe-events-list-widget .tribe-event-featured {
+    background: #fff;
+}
+
+.tribe-events-list-widget .tribe-event-featured .tribe-event-title a,
+.tribe-events-list-widget .tribe-event-featured .tribe-event-duration {
+    color: #0090d4;
+}
+
+/* maps */
+
+@media screen and (min-width: 767px) { 
+	.gmap-college .tab-pane {
+		display: inline-block;
+	}
+
+	#urbanicity,
+	#urbanicity_short {
+		width: 35%;
+		margin-right: 3%;
+	}
+
+	#inst_type_desc {
+		width: 60%;
+	}
+}
+
+.map-table .panel { 
+	box-shadow:none;
+	margin-bottom:0;
+}
+.map-table .panel-body { 
+	padding: 0 15px;
+}
+
+.cat2-search-input { 
+	display:block;
+}
+
+/* Pull college title from the smartsimian to include badges */
+.single-college .entry-header {
+    display: none;
+}
+
+.aacc-member-1 {
+background: url(/wp-content/uploads/2017/11/AACC-badge.png) no-repeat top center;
+    background-size: 100%;
+    height: 25px;
+    width: 25px;
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 6px;
+
+}
+
+.vfa-participant-1 { 
+background: url(/wp-content/uploads/2017/11/VFA-badge.png) no-repeat top center;
+    background-size: 100%;
+    height: 25px;
+    width: 25px;
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 6px;
+}
+
+.map-table .popup-only {
+    display: none;
+}
+
+#map-canvas .map-results-only {
+    display: none;
+}
+
+
+
+ 
+
+
+
